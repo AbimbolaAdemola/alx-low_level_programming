@@ -1,23 +1,17 @@
-#include "main.h"
-
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
 /**
- * main - Entry point of the program
+ * main - Entry point
  *
- * Return: Always 0
+ * Return: Always 0 (success)
  */
+
 int main(void)
 {
-	char *str = "_putchar";
-	int i = 0;
 
-	while (str[i] != '\0')
-	{
-		_putchar(str[i]);
-		i++;
-	}
+printf("_putchar\n");
 
-	_putchar('\n');
-
-	return (0);
+return (0);
 }
 
