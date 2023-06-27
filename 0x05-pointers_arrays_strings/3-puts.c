@@ -1,19 +1,17 @@
 #include "main.h"
 
 /**
- * _puts - prints
- * @str: the string
- *ademola
- * Return: 0
+ * _puts - Prints a string
+ * @str: The string to print
+ * Return: void
  */
-void _puts(char *str)
-{
-	int a = 0;
 
-	while (str[a] != '\0')
+Void _puts(char *str)
+
+{
+	for (; *str != '\0'; str++)
 	{
-		_putchar(str[a]);
-		a++;
+	_putchar(*str);
 	}
 	_putchar('\n');
 }
