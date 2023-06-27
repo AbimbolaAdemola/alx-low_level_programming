@@ -1,4 +1,3 @@
-julien@ubuntu:~/0x05$ cat 3-main.c
 #include "main.h"
 
 /**
@@ -8,9 +7,9 @@ julien@ubuntu:~/0x05$ cat 3-main.c
  */
 int main(void)
 {
-              char *str;
+	char *str;
 
-                     str = "I do not fear computers. I fear the lack of them - Isaac Asimov";
-                     _puts(str);
-                     return (0);
+	str = "I do not fear computers. I fear the lack of them - Isaac Asimov";
+	_puts(str);
+	return (0);
 }
