@@ -1,29 +1,25 @@
-#include "main.h"
+#include"main.h"
 /**
- * _strspn - Entry point
- * @s: input
- * @accept: input
- * Return: Always 0 (Success)
- */
+ * _strspn - find the length of the prefix substring
+ * @s: This compares the bytes
+ * @accept: The strings of bytes to compare with
+ *
+ * Return: The number of bytes in @s consisting of bytes
+ * from accept
+ *
+*/
 unsigned int _strspn(char *s, char *accept)
 {
-	unsigned int n = 0;
-	int r;
+	unsigned int m, n;
 
-	while (*s)
+	for (m = 0; s[m] != '\0'; m++)
 	{
-		for (r = 0; accept[r]; r++)
+		for (n = 0; accept[n] != '\0' && s[m] != accept[n]; n++)
 		{
-			if (*s == accept[r])
-			{
-				n++;
-				break;
-			}
-			else if (accept[r + 1] == '\0')
-				return (n);
+			/*Do nothing*/
 		}
-		s++;
+		if (accept[n] == '\0')
+			return (m);
 	}
-	return (n);
+	return (m);
 }
-
